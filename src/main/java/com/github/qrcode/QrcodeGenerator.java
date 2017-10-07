@@ -60,6 +60,8 @@ import javax.swing.UnsupportedLookAndFeelException;
  */
 public class QrcodeGenerator extends javax.swing.JFrame {
 
+    public String Name = "http://hello.com"; // website name for the qrCode Generated.
+
     private static final String ADDRESS_TEMPLATE =
     "BEGIN:VCARD\n"
     + "VERSION:3.0\n"
@@ -74,6 +76,7 @@ public class QrcodeGenerator extends javax.swing.JFrame {
 
     private BufferedImage image;
     private JFileChooser chooser1 = new JFileChooser();
+    public String File_Type = "PNG files";
     private class QRCodePanel extends javax.swing.JPanel {
 
         @Override
@@ -85,7 +88,9 @@ public class QrcodeGenerator extends javax.swing.JFrame {
         }
     }
 
+
     private class FilterPNG extends javax.swing.filechooser.FileFilter {
+
         public String getDescription() {
             return "PNG files";
         }
@@ -96,10 +101,24 @@ public class QrcodeGenerator extends javax.swing.JFrame {
             }
             String name = file.getName();
             name = name.toLowerCase();
+            Name = name;
+            System.out.println(name);
             return name.endsWith(".png");
+
+        }
+        private String ret_web_name(){
+
+            System.out.println(Name);
+            return Name;
+
         }
     }
 
+/*    public void objcreate (){
+        FilterPNG fil = new FilterPNG();
+        fil.accept();
+    }
+*/
     private class TransferableImage implements Transferable {
 
         private final java.awt.Image image;
@@ -210,7 +229,7 @@ public class QrcodeGenerator extends javax.swing.JFrame {
         chooser1.addChoosableFileFilter(new FilterPNG());
         chooser1.setDialogTitle("Select PNG file");
         chooser1.setCurrentDirectory(new File("."));
-        final java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+        final Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         if (x == null) {
             x = "" + ((screenSize.width - getWidth()) / 2);
         }
@@ -295,7 +314,7 @@ public class QrcodeGenerator extends javax.swing.JFrame {
         setTitle("QR code generator");
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel3.setPreferredSize(new java.awt.Dimension(212, 212));
+        jPanel3.setPreferredSize(new Dimension(212, 212));
 
         org.jdesktop.layout.GroupLayout jPanel3Layout = new org.jdesktop.layout.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -878,9 +897,9 @@ private void jTextField4KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:ev
     private static void setLookAndFeel()
         throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException
     {
-        javax.swing.UIManager.LookAndFeelInfo infos[] = UIManager.getInstalledLookAndFeels();
+        UIManager.LookAndFeelInfo infos[] = UIManager.getInstalledLookAndFeels();
         String firstFoundClass = null;
-        for (javax.swing.UIManager.LookAndFeelInfo info : infos) {
+        for (UIManager.LookAndFeelInfo info : infos) {
             String foundClass = info.getClassName();
             if ("Nimbus".equals(info.getName())) {
                 firstFoundClass = foundClass;

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="qrcodeegen"
+		module="qrcodeegen$sources"
+		revision="0.1"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20171006201439"/>
+	<dependencies>
+		<module organisation="com.google.zxing" name="core">
+			<revision name="2.1" status="release" pubdate="20121022082728" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/zxing" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3199" time="0" location="C:\Users\pavan\.ivy2\cache\com.google.zxing\core\ivy-2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/zxing/core/2.1/core-2.1.pom"/>
+				<caller organisation="qrcodeegen" name="qrcodeegen$sources" conf="compile-internal, compile, provided, optional" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="385409" time="0" location="C:\Users\pavan\.ivy2\cache\com.google.zxing\core\srcs\core-2.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/zxing/core/2.1/core-2.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.java.dev.swing-layout" name="swing-layout">
+			<revision name="1.0" status="release" pubdate="20061108125228" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://swing-layout.dev.java.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Lesser General Public License (LGPL), Version 2.1" url="http://www.gnu.org/copyleft/lesser.html"/>
+				<metadata-artifact status="no" details="" size="3046" time="0" location="C:\Users\pavan\.ivy2\cache\net.java.dev.swing-layout\swing-layout\ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/java/dev/swing-layout/swing-layout/1.0/swing-layout-1.0.pom"/>
+				<caller organisation="qrcodeegen" name="qrcodeegen$sources" conf="compile-internal, compile, provided, optional" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="swing-layout" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="49346" time="0" location="C:\Users\pavan\.ivy2\cache\net.java.dev.swing-layout\swing-layout\srcs\swing-layout-1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/java/dev/swing-layout/swing-layout/1.0/swing-layout-1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-collections" name="commons-collections">
+			<revision name="3.2.2" status="release" pubdate="20151112181126" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/collections/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="11218" time="0" location="C:\Users\pavan\.ivy2\cache\commons-collections\commons-collections\ivy-3.2.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.pom"/>
+				<caller organisation="qrcodeegen" name="qrcodeegen$sources" conf="compile-internal, compile, provided, optional" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="commons-collections" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="646075" time="0" location="C:\Users\pavan\.ivy2\cache\commons-collections\commons-collections\srcs\commons-collections-3.2.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

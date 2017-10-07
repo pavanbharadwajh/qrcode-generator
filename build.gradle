@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin : 'application'
+
+group = 'com.github'
+version = '1.0'
+
+description = """qrcode"""
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+        jcenter()
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'net.java.dev.swing-layout', name: 'swing-layout', version:'1.0'
+    compile group: 'com.google.zxing', name: 'core', version:'2.1'
+
+}
+
+mainClassName = 'com.github.qrcode.QrcodeGenerator'

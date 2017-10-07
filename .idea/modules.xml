@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/qrcode-generator.iml" filepath="$PROJECT_DIR$/qrcode-generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qrcode-generator-build.iml" filepath="$PROJECT_DIR$/.idea/modules/qrcode-generator-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qrcode-generator_main.iml" filepath="$PROJECT_DIR$/.idea/modules/qrcode-generator_main.iml" group="qrcode-generator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/qrcode-generator_test.iml" filepath="$PROJECT_DIR$/.idea/modules/qrcode-generator_test.iml" group="qrcode-generator" />
+    </modules>
+  </component>
+</project>
